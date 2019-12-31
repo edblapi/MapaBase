@@ -1,0 +1,27 @@
+<h1>{{ mapa.nombre | uppercase }}. <small>Nivel dificultad: {{ mapa.complejidad}}</small></h1>
+<hr>
+
+
+<div class="row animated fadeIn">
+    
+    <div class="col-md-4">
+        <img [src]="mapa.img" class="img-fluid" [alt]="mapa.nombre">
+        <br><br>
+        <a [routerLink]="['/mapas']" 
+        class="btn btn-outline-danger btn-block">Volver</a>
+
+    </div>
+
+    <div class="col-md-8">
+    <h3>{{ mapa.nombre }}</h3>
+        <hr>
+    <p>{{ mapa.descripcion}}</p>
+
+    </div>
+
+</div>
+
+
+<div>
+    <app-mapa1></app-mapa1>
+</div>
